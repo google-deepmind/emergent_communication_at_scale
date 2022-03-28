@@ -9,10 +9,11 @@ The repo contains the code which we used for the experiments reported in our
 [ICLR 2022 paper](https://openreview.net/forum?id=AUGBfDIV9rL), titled "Emergent Communication At Scale".
 
 ## Downloading dataset
-First, download the dataset from [this path](https://storage.googleapis.com/dm_emcom_at_scale_dataset) in the `emcom_datasets/` directory.
+Download the datasets [CelebA logits](https://storage.googleapis.com/dm_emcom_at_scale_dataset/byol_celeb_a2.tar.gz)
+and [ImageNet logits](https://storage.googleapis.com/dm_emcom_at_scale_dataset/byol_imagenet2012.tar.gz) in the `emcom_datasets/` directory.
 
 ## Installation
-First, install dependencies by running the following commands:
+Install dependencies by running the following commands:
 
 ```shell
 # Create a virtual env
@@ -21,6 +22,8 @@ python3 -m venv ~/.venv/emcom
 source ~/.venv/emcom/bin/activate
 # Install other dependencies
 pip install -r requirements.txt
+# Manually install the latest Jaxline version, since required 0.0.6 is not yet on pypi.
+pip install git+https://github.com/deepmind/jaxline
 ```
 
 ### Lewis game
