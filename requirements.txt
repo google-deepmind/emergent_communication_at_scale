@@ -11,5 +11,5 @@ numpy==1.22.2
 optax==0.1.1
 rlax==0.1.1
 scipy==1.8.0
-tensorflow==2.8.0
+tensorflow==2.12.1
 tensorflow-datasets==4.5.2
